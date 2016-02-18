@@ -2,17 +2,27 @@
 var path = require("path");
 
 const webpackConfig = {
-  entry: './src/app.ts',
+  entry: './src/app.tsx',
   output: {
     path: path.join(__dirname, '../dist'),
     filename: 'bundle.js'
   },
   resolve: {
-    extensions: ['', '.ts', '.tsx', '.js', '.jsx']
+    extensions: ['', '.webpack.js', '.web.js', '.ts', '.tsx', '.js']
   },
   module: {
-    loaders: [
-      { test: /\.ts(x?)$/, loader: 'babel-loader!ts-loader' }]
+    loaders: [{
+      test: /\.ts(x?)$/,
+      exclude: /node_modules/,
+      loader: 'babel-loader?presets[]=es2015&presets[]=react!ts-loader'
+    }, {
+      test: /\.js$/,
+      exclude: /node_modules/,
+      loader: 'babel',
+      query: {
+        presets: ['es2015', 'react']
+      }
+    }]
   }
 };
 

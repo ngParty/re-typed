@@ -1,10 +1,12 @@
-
+var webpack = require('webpack');
 var path = require('path');
 
 const webpackConfig = {
-  entry: './src/main.tsx',
+  entry: [
+    './src/main.tsx'
+  ],
   output: {
-    path: path.join(__dirname, '../dist'),
+    path: path.join(__dirname, './dist'),
     filename: 'bundle.js'
   },
   resolve: {
@@ -15,8 +17,8 @@ const webpackConfig = {
       {
         test: /\.ts(x?)$/,
         loader: 'tslint',
-        include: path.resolve(__dirname, '../src')
-      },
+        include: path.resolve(__dirname, './src')
+      }
     ],
     loaders: [{
       test: /\.ts(x?)$/,
@@ -33,7 +35,13 @@ const webpackConfig = {
   },
   tslint: {
     emitErrors: false,
-    formattersDirectory: path.resolve(__dirname, '../node_modules/tslint-loader/formatters/')
+    formattersDirectory: path.resolve(__dirname, './node_modules/tslint-loader/formatters/')
+  },
+  plugins: [
+    new webpack.NoErrorsPlugin()
+  ],
+  devServer: {
+    stats: { colors: true },
   }
 };
 

@@ -11,6 +11,7 @@ BaseKit for React, Redux, TypeScript + bundler (webpack)
 - [x] [babel](https://babeljs.io)
 - [x] [react](https://github.com/facebook/react)
 - [x] [redux](http://redux.js.org/)
+- [] react-transform
 - [] test support
 
 ## Setup
@@ -24,11 +25,7 @@ $ npm install
 ```
 $ npm run dev
 ```
-To serve index.html and compiled output run:
-```
-$ python -m SimpleHTTPServer 3000
-```
 
 # License
 
-MIT
+ISC

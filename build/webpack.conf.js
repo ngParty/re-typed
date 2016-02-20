@@ -2,7 +2,7 @@
 var path = require("path");
 
 const webpackConfig = {
-  entry: './src/app.tsx',
+  entry: './src/main.tsx',
   output: {
     path: path.join(__dirname, '../dist'),
     filename: 'bundle.js'

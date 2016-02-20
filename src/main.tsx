@@ -1,4 +1,3 @@
-/// <reference path="../typings/tsd.d.ts" />
 import * as ReactDOM from 'react-dom';
 import * as React from 'react';
 import { Provider } from 'react-redux';

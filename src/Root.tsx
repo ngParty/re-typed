@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Dispatch } from 'redux';
+import { IDispatch } from 'redux';
 import { connect } from 'react-redux';
 import greeter from './greeter';
 
@@ -12,7 +12,7 @@ const initAction = () => {
 };
 
 interface RootProps {
-  dispatch: Dispatch;
+  dispatch: IDispatch;
 }
 
 class Root extends React.Component<RootProps, void> {

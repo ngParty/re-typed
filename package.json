@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "webpack-dev-server --config webpack.conf.js --content-base . --history-api-fallback --hot --inline --port 3000",
     "lint": "tslint -c tslint.json src/**/*.tsx src/**/*.ts",
+    "postinstall": "typings install",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [

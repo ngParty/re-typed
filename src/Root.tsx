@@ -8,17 +8,17 @@ const initAction = () => {
   return {
     type: 'ROOT_MOUNTED',
     payload: 42
-  }
+  };
 };
 
 interface RootProps {
-  dispatch: Dispatch,
+  dispatch: Dispatch;
 }
 
 class Root extends React.Component<RootProps, void> {
 
   render() {
-    return <div>{greeter('from Root component!')}</div>
+    return <div>{greeter('from Root component!')}</div>;
   }
 
   componentDidMount() {

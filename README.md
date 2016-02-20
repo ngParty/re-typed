@@ -5,7 +5,7 @@ BaseKit for React, Redux, TypeScript + bundler (webpack)
 ## Content
 
 - [x] webpack
-- [] tslint
+- [x] tslint
 - [x] typescript
 - [x] babel
 - [x] react

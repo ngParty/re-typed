@@ -5,7 +5,13 @@
     "redux": "github:andrew-w-ross/typings-redux#2e0b57e18c6240d17fde045573d74e649762437b"
   },
   "ambientDependencies": {
+    "chai": "github:DefinitelyTyped/DefinitelyTyped/chai/chai.d.ts#1914a00b3c740348dae407ee0d2be89b0b58ad7f",
+    "mocha": "github:DefinitelyTyped/DefinitelyTyped/mocha/mocha.d.ts#d6dd320291705694ba8e1a79497a908e9f5e6617",
+    "node": "github:DefinitelyTyped/DefinitelyTyped/node/node.d.ts#20e1eb9616922d382d918cc5a21870a9dbe255f5",
     "react": "github:DefinitelyTyped/DefinitelyTyped/react/react.d.ts#f407264835650f5f38d4bb2c515a79e7a835916b",
-    "react-dom": "github:DefinitelyTyped/DefinitelyTyped/react/react-dom.d.ts#ca5bfe76d2d9bf6852cbc712d9f3e0047c93486e"
+    "react-addons-test-utils": "github:DefinitelyTyped/DefinitelyTyped/react/react-addons-test-utils.d.ts#ca5bfe76d2d9bf6852cbc712d9f3e0047c93486e",
+    "react-dom": "github:DefinitelyTyped/DefinitelyTyped/react/react-dom.d.ts#ca5bfe76d2d9bf6852cbc712d9f3e0047c93486e",
+    "sinon": "github:DefinitelyTyped/DefinitelyTyped/sinon/sinon.d.ts#6e7d83167d86d857817bd492786f8304f5c4a0e4",
+    "sinon-chai": "github:DefinitelyTyped/DefinitelyTyped/sinon-chai/sinon-chai.d.ts#ceedbb35506c4b20867ddb495e8626ea04f38969"
   }
 }

@@ -15,7 +15,7 @@ interface RootProps {
   dispatch: IDispatch;
 }
 
-class Root extends React.Component<RootProps, void> {
+export class Root extends React.Component<RootProps, void> {
 
   render() {
     return <div>{greeter('from Root component!')}</div>;

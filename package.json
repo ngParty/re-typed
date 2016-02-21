@@ -4,10 +4,11 @@
   "description": "Redux React TypeScript + bundler (webpack)",
   "main": "index.js",
   "scripts": {
+    "build": "NODE_ENV=production webpack --progress --colors --config webpack.conf.js",
     "dev": "webpack-dev-server --config webpack.conf.js --content-base . --history-api-fallback --hot --inline --port 3000",
     "lint": "tslint -c tslint.json src/**/*.tsx src/**/*.ts",
     "postinstall": "typings install",
-    "test": "karma start karma.conf.js",
+    "test": "NODE_ENV=test karma start karma.conf.js",
     "test:dev": "npm run test -- --single-run=false"
   },
   "keywords": [
@@ -26,6 +27,7 @@
     "babel-preset-react-hmre": "^1.1.0",
     "chai": "^3.5.0",
     "css-loader": "^0.23.1",
+    "file-loader": "^0.8.5",
     "karma": "^0.13.21",
     "karma-mocha": "^0.2.2",
     "karma-phantomjs-launcher": "^1.0.0",

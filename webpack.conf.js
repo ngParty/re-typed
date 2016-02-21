@@ -2,9 +2,10 @@ var webpack = require('webpack');
 var path = require('path');
 
 const webpackConfig = {
-  entry: [
-    './src/main.tsx'
-  ],
+  entry: {
+    tsx: './src/main.tsx',
+    html: './src/index.html'
+  },
   output: {
     path: path.join(__dirname, './dist'),
     filename: 'bundle.js'
@@ -21,6 +22,9 @@ const webpackConfig = {
       }
     ],
     loaders: [{
+      test: /\.html$/,
+      loader: 'file?name=[name].[ext]'
+    }, {
       test: /\.css$/,
       exclude: /styles/,
       loaders: [

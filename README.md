@@ -24,7 +24,25 @@ $ npm install
 ## Run
 
 ```
-$ npm run dev
+$ npm run dev # start 
+```
+
+## Test
+
+```
+$ npm test
+```
+
+or development mode
+
+```
+$ npm run test:dev # lunches karma with watch capability
+```
+
+## Build
+
+```
+$ npm run build
 ```
 
 # License

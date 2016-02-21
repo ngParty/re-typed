@@ -1,6 +1,7 @@
 # re-typed
 
-BaseKit for React, Redux, TypeScript + bundler (webpack)
+[![Build Status](https://travis-ci.org/vire/re-typed.svg)](https://travis-ci.org/vire/re-typed)
+BaseKit with React, Redux, TypeScript, Typings, Webpack, Karma
     
 ## Content
 
@@ -24,7 +25,7 @@ $ npm install
 ## Run
 
 ```
-$ npm run dev # start 
+$ npm start
 ```
 
 ## Test

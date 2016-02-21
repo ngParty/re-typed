@@ -1,8 +1,7 @@
 import * as React from 'react';
 import { IDispatch } from 'redux';
 import { connect } from 'react-redux';
-import greeter from './greeter';
-
+import WelcomeBar from '../components/WelcomeBar';
 
 const initAction = () => {
   return {
@@ -18,7 +17,11 @@ interface RootProps {
 export class Root extends React.Component<RootProps, void> {
 
   render() {
-    return <div>{greeter('from Root component!')}</div>;
+    return (
+      <div>
+        <WelcomeBar name={'Re-typed'}/>
+      </div>
+    );
   }
 
   componentDidMount() {

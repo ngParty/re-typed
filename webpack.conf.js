@@ -21,6 +21,22 @@ const webpackConfig = {
       }
     ],
     loaders: [{
+      test: /\.css$/,
+      exclude: /styles/,
+      loaders: [
+        'style-loader',
+        'css-loader?modules&sourceMap&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]',
+        'postcss-loader'
+      ]
+    }, {
+      test: /\.css$/,
+      include: /styles/,
+      loaders: [
+        'style-loader',
+        'css-loader?sourceMap',
+        'postcss-loader'
+      ]
+    }, {
       test: /\.ts(x?)$/,
       exclude: /node_modules/,
       loader: 'babel-loader?presets[]=es2015&presets[]=react!ts-loader'

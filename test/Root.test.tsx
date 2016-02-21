@@ -1,6 +1,6 @@
 import * as React from 'react';
 import * as TestUtils from 'react-addons-test-utils';
-import { Root } from '../src/Root';
+import { Root } from '../src/containers/Root';
 const expect = chai.expect;
 
 describe('Root', () => {

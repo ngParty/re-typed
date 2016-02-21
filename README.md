@@ -1,6 +1,7 @@
 # re-typed
 
 [![Build Status](https://travis-ci.org/vire/re-typed.svg)](https://travis-ci.org/vire/re-typed)
+
 BaseKit with React, Redux, TypeScript, Typings, Webpack, Karma
     
 ## Content

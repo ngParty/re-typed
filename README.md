@@ -12,8 +12,8 @@ BaseKit for React, Redux, TypeScript + bundler (webpack)
 - [x] [react](https://github.com/facebook/react)
 - [x] [redux](http://redux.js.org/)
 - [x] [karma](https://karma-runner.github.io/0.13/index.html),[sinon-chai](https://github.com/kmees/karma-sinon-chai)
+- [x] [react-transform-hmr](https://github.com/danmartinez101/babel-preset-react-hmre)
 - [] styles
-- [] react-transform
 
 ## Setup
 
